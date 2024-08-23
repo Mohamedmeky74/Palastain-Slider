@@ -1,0 +1,42 @@
+.item img {
+    height: 300px;
+    border-radius:7px ;
+
+}
+.imgText {
+    bottom: 10px;
+    left: 20%;
+    width: 60%;
+    background: linear-gradient(to right, black , white , green );
+    font-family: 'Roboto', sans-serif;
+    color: red;
+}
+.item{
+    transition: transform 0.8s ease;
+    -webkit-transition: transform 0.8s ease;
+    -moz-transition: transform 0.8s ease;
+    -ms-transition: transform 0.8s ease;
+    -o-transition: transform 0.8s ease;
+    
+}
+.item:hover{
+    transform: scale(0.8);
+}
+#lightBoxContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#lightBox {
+    background-image: url(../images/palastain.jpg);
+    width: 60%;
+    height: 500PX;
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (max-width:667px){
+    #lightBox {
+        width: 100%;
+    } 
+}
+i{
+    cursor: pointer;
+}
